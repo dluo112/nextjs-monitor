@@ -1,7 +1,5 @@
-import { NextResponse } from 'next/server';
-import { deleteTokenCookie } from '@/lib/auth';
+﻿import { NextResponse } from 'next/server';
 
 export async function POST() {
-  deleteTokenCookie();
-  return NextResponse.json({ code: "Success", msg: "Logged out" });
+  return NextResponse.json({ code: 'Success', msg: 'Authorization should be cleared on the client.' });
 }
